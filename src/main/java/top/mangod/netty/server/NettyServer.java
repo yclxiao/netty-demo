@@ -44,9 +44,9 @@ public class NettyServer {
         serverBootstrap.bind(9000)
                 .addListener(future -> {
                     if (future.isSuccess()) {
-                        System.out.println("端口9000绑定成功");
+                        System.out.println("端口9000绑定成功！");
                     } else {
-                        System.err.println("端口9000绑定失败");
+                        System.err.println("端口9000绑定失败！");
                     }
                 });
     }

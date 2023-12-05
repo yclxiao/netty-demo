@@ -7,6 +7,10 @@ import top.mangod.netty.session.Session;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * 用户登录后，保存Session
+ * 说白了就是将用户信息 和 对应的Channel关系 保存起来，方便后续通信
+ */
 public class SessionUtil {
     private static final Map<String, Channel> userIdChannelMap = new ConcurrentHashMap<>();
 
